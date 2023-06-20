@@ -28,7 +28,7 @@ const CreatePost = () => {
       setLoading(true)
       console.log('entró handleSubmit')
       try {
-        const res = await fetch("http://localhost:8000/api/v1/post", {
+        const res = await fetch("https://api-dalle-e-mern.onrender.com/api/v1/post", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const CreatePost = () => {
       
       
         setGeneratingImg(true)
-        const res = await fetch('http://localhost:8000/api/v1/dalle', {
+        const res = await fetch('https://api-dalle-e-mern.onrender.com/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
